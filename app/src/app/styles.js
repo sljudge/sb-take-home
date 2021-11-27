@@ -5,21 +5,21 @@ const styles = {
     borderBottomRightRadius: '3px',
     borderTopRightRadius: '3px',
     maxWidth: '935px',
-    margin: window.matchMedia("(max-width: 550px)").matches ? '2.5vh auto' : '16px auto',
-    width: window.matchMedia("(max-width: 550px)").matches ? '95vw' : 'calc(100% - 40px)',
-    height: window.matchMedia("(max-width: 750px)").matches ? '95vh' : '500px',
-    maxHeight: window.matchMedia("(max-width: 750px)").matches ? '95vh' : '500px',
+    margin: window.matchMedia('(max-width: 550px)').matches ? '2.5vh auto' : '16px auto',
+    width: window.matchMedia('(max-width: 550px)').matches ? '95vw' : 'calc(100% - 40px)',
+    height: window.matchMedia('(max-width: 750px)').matches ? '95vh' : '500px',
+    maxHeight: window.matchMedia('(max-width: 750px)').matches ? '95vh' : '500px',
     overflow: 'hidden',
     display: 'flex',
-    flexDirection: window.matchMedia("(max-width: 750px)").matches ? 'column' : 'row',
+    flexDirection: window.matchMedia('(max-width: 750px)').matches ? 'column' : 'row',
     justifyContent: 'flex-start',
     alignContent: 'stretch',
-    alignItems: 'center',
+    alignItems: 'center'
   },
 
   image: {
     order: '1',
-    flex: window.matchMedia("(max-width: 750px)").matches ? '' : '0 0 60%',
+    flex: window.matchMedia('(max-width: 750px)').matches ? '' : '0 0 60%',
     alignSelf: 'flex-start',
     display: 'flex',
     justifyContent: 'center',
@@ -37,7 +37,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
-    maxHeight: window.matchMedia("(max-width: 750px)").matches ? '60%' : '100%'
+    maxHeight: window.matchMedia('(max-width: 750px)').matches ? '60%' : '100%'
   }
 }
 

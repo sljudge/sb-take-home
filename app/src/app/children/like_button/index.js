@@ -5,12 +5,11 @@ import UnlikedIcon from './children/unliked_icon'
 const LikeButton = (props) => {
   const { isLiked, onClick, size = 26 } = { ...props }
   return (
-    <button onClick={onClick} >
+    <button onClick={onClick}>
       {
-        isLiked ?
-          <LikedIcon size={size} />
-          :
-          <UnlikedIcon size={size} />
+        isLiked
+          ? <LikedIcon size={size} />
+          : <UnlikedIcon size={size} />
       }
     </button>
   )
