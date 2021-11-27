@@ -12,7 +12,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "standard",
+    "test": "npx standard && react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
