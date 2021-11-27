@@ -1,4 +1,4 @@
-export default {
+const styles = {
   main: {
     backgroundColor: '#fff',
     border: '1px solid #e6e6e6',
@@ -7,24 +7,38 @@ export default {
     maxWidth: '935px',
     margin: '16px auto',
     width: 'calc(100% - 40px)',
-
+    height: window.matchMedia("(max-width: 750px)").matches ? '95vh' : '500px',
+    maxHeight: window.matchMedia("(max-width: 750px)").matches ? '95vh' : '500px',
+    overflow: 'hidden',
     display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    flexDirection: window.matchMedia("(max-width: 750px)").matches ? 'column' : 'row',
     justifyContent: 'flex-start',
     alignContent: 'stretch',
-    alignItems: 'flex-start'
+    alignItems: 'center',
   },
 
   image: {
     order: '1',
-    flex: '1 0 60%',
-    alignSelf: 'flex-start'
+    flex: window.matchMedia("(max-width: 750px)").matches ? '' : '0 0 60%',
+    alignSelf: 'flex-start',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100%',
+    backgroundColor: '#fafafa',
+    overflow: 'hidden'
   },
 
   text: {
     order: '2',
-    flex: '1 0 40%',
-    alignSelf: 'flex-start'
+    flexGrow: '1',
+    alignSelf: 'flex-start',
+    padding: '1rem 0 0 1rem',
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%',
+    maxHeight: window.matchMedia("(max-width: 750px)").matches ? '60%' : '100%'
   }
 }
+
+export default styles
