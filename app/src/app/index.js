@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Image from './children/image'
 import LikeBar from './children/like_bar'
 import UserBlock from './children/user_block'
@@ -12,11 +12,6 @@ const App = (props) => {
   const handleLikeClick = () => {
     setIsLiked(!isLiked)
   }
-
-  useEffect(() => {
-    console.log(data)
-
-  }, [data])
 
   return (
     <main style={styles.main}>
