@@ -5,7 +5,7 @@ const styles = {
     borderBottomRightRadius: '3px',
     borderTopRightRadius: '3px',
     maxWidth: '935px',
-    margin: window.matchMedia("(max-width: 550px)").matches ? 'auto' : '16px auto',
+    margin: window.matchMedia("(max-width: 550px)").matches ? '2.5vh auto' : '16px auto',
     width: window.matchMedia("(max-width: 550px)").matches ? '95vw' : 'calc(100% - 40px)',
     height: window.matchMedia("(max-width: 750px)").matches ? '95vh' : '500px',
     maxHeight: window.matchMedia("(max-width: 750px)").matches ? '95vh' : '500px',
