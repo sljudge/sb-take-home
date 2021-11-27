@@ -18,8 +18,8 @@ const CommentsBlock = (props) => {
                 <span style={styles.username}>{data.owner.username}</span>
                 {highlightHashtags(caption)}
             </div>
-            {comments.map((comment, i) => (
-                <Comment key={`c-${comment.id}`} data={comment} index={i} />
+            {comments.map((comment) => (
+                <Comment key={`c-${comment.id}`} data={comment} />
             ))}
         </div>
     )

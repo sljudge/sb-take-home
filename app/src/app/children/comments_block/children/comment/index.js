@@ -4,7 +4,7 @@ import LikeButton from '../../../like_button'
 import { highlightHashtags } from '../../helpers'
 
 const Comment = (props) => {
-    const { data, index } = { ...props }
+    const { data } = { ...props }
     const [isLiked, setIsLiked] = useState(data.likedByViewer)
 
     const handleLikeClick = () => {
@@ -12,7 +12,7 @@ const Comment = (props) => {
     }
 
     return (
-        <div style={{ ...styles.container, backgroundColor: index & 1 ? '#fbfbfb' : '#ffffff' }}>
+        <div style={{ ...styles.container }}>
             <span>
                 <span style={styles.username}>{data.owner.username}</span>
                 <span>{highlightHashtags(data.text)}</span>
