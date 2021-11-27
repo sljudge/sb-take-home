@@ -4,7 +4,6 @@ const styles = {
         borderBottom: '3px solid #fafafa',
         padding: '0 0 1rem',
         marginRight: '1rem',
-        // boxShadow: '2px -8px 5px 0px rgba(249,246,246,0.75) inset',
     },
     textContainer: {
         padding: '0 0.5rem'
