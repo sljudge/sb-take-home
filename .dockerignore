@@ -1,6 +1,6 @@
 .git
 .gitignore
-app/node_modules
+/app/node_modules/**/*
 Dockerfile*
 docker-compose*
 README.md
